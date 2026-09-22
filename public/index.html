@@ -4,64 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sayuno.me</title>
-  <meta name="description" content="sayuno.me のサブドメインに置いてある小さなサイトの目次。">
+  <meta name="description" content="sayuno.me のサブドメインにあるもの。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="/">sayuno.me</a>
-    <a class="nav-link" href="https://github.com/TakuyaAbe" rel="me">GitHub</a>
-  </header>
-
   <main>
-    <section class="hero">
-      <p class="eyebrow">INDEX</p>
-      <h1>sayuno.me の目次</h1>
-      <p class="lead">サブドメインごとに置いてある、小さな実験や紹介サイトの一覧です。新しいものが上。</p>
-    </section>
+    <h1>sayuno.me</h1>
+    <p class="note">サブドメインにあるもの。</p>
 
-    <section class="sites" aria-labelledby="sites-title">
-      <h2 id="sites-title" class="visually-hidden">サイト一覧</h2>
-      <ul class="site-list">
-        <li class="site">
-          <a class="site__link" href="https://funyuan.sayuno.me/">
-            <span class="site__host"><span class="site__sub">funyuan</span>.sayuno.me</span>
-            <span class="site__title">ふにゅ庵 — 和菓子スクイーズ</span>
-            <span class="site__desc">いちご大福からたい焼きまで、六種の和菓子スクイーズを紹介する架空ブランドのサイト。写真をタップすると「ぎゅっ」とできる。</span>
-            <span class="site__meta"><time datetime="2026-09">2026.09</time><span class="tag">紹介サイト</span><span class="tag">生成画像</span></span>
-          </a>
-        </li>
-        <li class="site">
-          <a class="site__link" href="https://jevj.sayuno.me/">
-            <span class="site__host"><span class="site__sub">jevj</span>.sayuno.me</span>
-            <span class="site__title">Jev VJ</span>
-            <span class="site__desc">音のビート検出と Jev の判断でシーンが切り替わるライブビジュアルの実験。音源の再生かシステム音声の共有が必要。</span>
-            <span class="site__meta"><time datetime="2026-09">2026.09</time><span class="tag">実験</span><span class="tag">音</span></span>
-          </a>
-        </li>
-        <li class="site">
-          <a class="site__link" href="https://htmlday2026.sayuno.me/">
-            <span class="site__host"><span class="site__sub">htmlday2026</span>.sayuno.me</span>
-            <span class="site__title">hello world! / flood of float</span>
-            <span class="site__desc">HTML Day 2026 の作品。黒い四角とひらがなが float でウィンドウ幅に合わせて流れ直す。</span>
-            <span class="site__meta"><time datetime="2026-08">2026.08</time><span class="tag">HTML Day</span><span class="tag">CSS</span></span>
-          </a>
-        </li>
-        <li class="site">
-          <a class="site__link" href="https://trajan.sayuno.me/">
-            <span class="site__host"><span class="site__sub">trajan</span>.sayuno.me</span>
-            <span class="site__title">Trajan Recitation</span>
-            <span class="site__desc">トラヤヌス帝の記念柱の碑文に想を得た書体。碑文のラテン語テキストと書体ファイルの配布。</span>
-            <span class="site__meta"><time datetime="2026-03">2026.03</time><span class="tag">書体</span><span class="tag">Latin</span></span>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <ul class="list">
+      <li>
+        <a href="https://jevj.sayuno.me/">jevj</a>
+        <span class="title">Jev VJ</span>
+        <span class="desc">音でシーンが変わるライブビジュアルの実験</span>
+      </li>
+      <li>
+        <a href="https://htmlday2026.sayuno.me/">htmlday2026</a>
+        <span class="title">hello world! / flood of float</span>
+        <span class="desc">HTML Day 2026 の作品</span>
+      </li>
+      <li>
+        <a href="https://trajan.sayuno.me/">trajan</a>
+        <span class="title">Trajan Recitation</span>
+        <span class="desc">記念柱の碑文から起こした書体</span>
+      </li>
+    </ul>
+
+    <p class="foot"><a href="https://github.com/TakuyaAbe/www">source</a></p>
   </main>
-
-  <footer class="site-footer">
-    <p>© <span data-year></span> sayuno.me · <a href="https://github.com/TakuyaAbe/www">このページのソース</a></p>
-  </footer>
-  <script src="script.js"></script>
 </body>
 </html>
