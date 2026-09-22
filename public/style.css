@@ -37,3 +37,4 @@ h1 { font-size: 1.7rem; font-weight: 500; margin: 0 0 40px; letter-spacing: 0.02
 
 .foot { margin: 48px 0 0; font-size: 0.85rem; color: var(--pencil); }
 .foot a { color: inherit; text-decoration: underline dotted; text-underline-offset: 4px; }
+.foot a + a { margin-left: 1.5em; }
