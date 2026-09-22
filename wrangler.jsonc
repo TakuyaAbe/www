@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // Worker 名 = サイト名。Deploy ボタンやブートストラップで置き換える
+  "name": "www",
+  // 個人アカウント（a.taku275@gmail.com）。別アカウントには絶対にデプロイしない安全弁
+  "account_id": "d011b354fed440f212db8324bb8ec38d",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./public",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+  // カスタムドメインを付けるときはコメントを外して <name> を書き換える（DNS は自動作成）
+  // ,"routes": [{ "pattern": "<name>.sayuno.me", "custom_domain": true }]
+}

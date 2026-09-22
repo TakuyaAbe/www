@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsite</title>
+  <meta name="description" content="マイクロサイトのひな形。タイトルと本文を差し替えて使う。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Microsite</a>
+    <nav class="nav" aria-label="サイト内">
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">MICROSITE TEMPLATE</p>
+      <h1>ここにキャッチコピー。<br>二行目で補足する。</h1>
+      <p class="lead">静的 HTML / CSS / JS だけで動くマイクロサイトのひな形。Cloudflare Workers（static assets）で配信する。</p>
+      <div class="actions">
+        <a class="btn btn--primary" href="#features">詳しく見る</a>
+        <a class="btn btn--ghost" href="#contact">問い合わせ</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>このサイトが何で、誰のためのものかを 2〜3 文で。</p>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Features</h2>
+      <ul class="cards">
+        <li class="card"><h3>01. 速い</h3><p>ビルド不要。push すれば数十秒で反映。</p></li>
+        <li class="card"><h3>02. 軽い</h3><p>フレームワークなし。必要になったら足す。</p></li>
+        <li class="card"><h3>03. 直せる</h3><p>HTML を直接編集。設計より中身に時間を使う。</p></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>連絡先やリンクをここに。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span data-year></span> Microsite</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
