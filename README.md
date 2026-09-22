@@ -1,4 +1,6 @@
-# microsite-template
+# www — sayuno.me
+
+本番: https://sayuno.me （https://www.sayuno.me は `worker.js` で apex へ 301）
 
 静的マイクロサイトのひな形（HTML / CSS / JS のみ、ビルド不要）。Cloudflare Workers の static assets で配信する。
 

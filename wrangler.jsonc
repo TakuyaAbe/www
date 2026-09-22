@@ -1,16 +1,22 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  // Worker 名 = サイト名。Deploy ボタンやブートストラップで置き換える
   "name": "www",
   // 個人アカウント（a.taku275@gmail.com）。別アカウントには絶対にデプロイしない安全弁
   "account_id": "d011b354fed440f212db8324bb8ec38d",
   "compatibility_date": "2026-09-01",
   "workers_dev": true,
+  // www → apex のリダイレクトだけ Worker で処理し、残りは静的アセット
+  "main": "worker.js",
   "assets": {
     "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true,
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "404-page"
-  }
-  // カスタムドメインを付けるときはコメントを外して <name> を書き換える（DNS は自動作成）
-  // ,"routes": [{ "pattern": "<name>.sayuno.me", "custom_domain": true }]
+  },
+  // カスタムドメイン（DNS は自動作成）。www は worker.js で sayuno.me へ 301
+  "routes": [
+    { "pattern": "sayuno.me", "custom_domain": true },
+    { "pattern": "www.sayuno.me", "custom_domain": true }
+  ]
 }
