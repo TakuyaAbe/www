@@ -1,10 +1,8 @@
 # www — sayuno.me
 
-本番: https://sayuno.me （https://www.sayuno.me は `worker.js` で apex へ 301）
+sayuno.me のサブドメインにあるサイトの目次ページ。本番: https://sayuno.me （https://www.sayuno.me は `worker.js` で apex へ 301）
 
-静的マイクロサイトのひな形（HTML / CSS / JS のみ、ビルド不要）。Cloudflare Workers の static assets で配信する。
-
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/TakuyaAbe/microsite-template)
+サイトを増やしたら `public/index.html` の `.site-list` に `<li class="site">` を 1 つ足して push する（新しいものが上）。
 
 ## 新しいサイトを作る
 
